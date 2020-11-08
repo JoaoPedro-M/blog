@@ -2,23 +2,20 @@
 
 
 {% block content %}
-<div id="header">
     <div id="cab">
-    <h1>Aqui são meus posts</h1>
+    <h1 id="titulo_principal">Aqui são meus posts</h1>
 
     <p>Temos aqui varios posts sobre vários assuntos muito interessante, dê uma olhada em algum deles:</p>
     </div>
 
     {% for pos in post %}
     <hr>
-        <h2>{{ pos.titulo }}</h2>
+        <h2><a href="{{ pos.id }}">{{ pos.titulo }}</a></h2>
         <p id="data">{{ pos.data }}</p>
-        <p>{{ pos.conteudo }}</p>
-        
+        <p class="cont">{{ pos.conteudo }}</p>
     {% endfor %}
 
-
-</div>
+    <button onclick="clicar()">clique!</button>
 
 {% endblock %}
 
