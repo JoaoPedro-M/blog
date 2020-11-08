@@ -1,7 +1,15 @@
 
 
 function clicar() {
-    alert("oi")
-    var text = document.getElementsByClassName("cont")
-    text[2].innerHTML = text[2].textContent
 }
+function textos() {
+    var text = document.getElementsByClassName("cont")
+    if (text.length > 1) {
+        for (var i=0; i<text.length; i++) {
+            text[i].innerHTML = text[i].textContent
+        }
+    } else {
+        text[0].innerHTML = text[0].textContent
+    }
+}
+textos()
