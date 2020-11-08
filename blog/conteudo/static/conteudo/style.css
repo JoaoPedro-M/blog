@@ -1,10 +1,20 @@
 * {
-    font-size: 120%;
+    font-size: 110%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(92, 157, 255);
+}
 
 h1 {
     font-size: 200%;
+    font-family: Satisfy;
 }
 
 h2 {
@@ -15,27 +25,46 @@ p {
     text-indent: 5%;
 }
 
+li {
+    list-style-type: none;  
+    display: inline;
+    margin: 20px;
+}
 
+#listas {
+    position: relative;
+    border: 1px solid #000000;
+    float: right;
+    margin-right: 100px; 
+}
 
-#header {
+ul {
+    
+    font-size: 30px;
+    margin: 10px;
+    
+}
+
+#centro {
     text-align: center;
     padding: 0px;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
+}
+
+#header {
     text-align: left;
+    border: 1px solid #000000;
+    border-radius: 10px;
     padding-left: 2%;
     padding-right: 2%;
     padding-top: 0.5%;
-    border: 1px solid #000000;
-    border-radius: 10px;
     /*border-bottom: none;*/
 }
 
 
-#cab {
-    background-color: #8e8eff;
-}
+
 
 p#data {
     font-size: 70%;
@@ -43,3 +72,4 @@ p#data {
     padding: 0px;
 
 }
+

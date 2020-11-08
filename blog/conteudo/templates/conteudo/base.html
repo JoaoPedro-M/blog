@@ -6,9 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block titulo %}Título{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'conteudo/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 </head>
 <body>
-    {% block menu %}{% endblock %}
-    {% block content %}{% endblock %}
+    <div id="centro">
+        <div id="menu">
+            <ul>
+                <div id="listas">
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Outro</a></li>
+                </div>
+            </ul>
+        </div>
+        {% block content %}{% endblock %}
+    </div>
 </body>
 </html>
