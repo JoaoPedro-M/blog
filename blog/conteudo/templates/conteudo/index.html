@@ -1,5 +1,6 @@
 {% extends "conteudo/base.html" %}
 
+{% block titulo %}Blog{% endblock %}
 
 {% block content %}
     <div id="cab">
@@ -15,7 +16,6 @@
         <p class="cont">{{ pos.conteudo }}</p>
     {% endfor %}
 
-    <button onclick="clicar()">clique!</button>
 
 {% endblock %}
 
